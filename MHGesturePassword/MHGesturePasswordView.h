@@ -10,6 +10,10 @@
 
 
 NS_ASSUME_NONNULL_BEGIN
+#define kNormalColor [UIColor grayColor]  //默认颜色
+#define kSelectColor [UIColor blueColor]  //选中颜色
+#define kErrorColor  [UIColor redColor]   //错误颜色
+
 typedef void(^returnBlcok)(NSMutableArray *returnArray);
 
 @interface MHGesturePasswordView : UIView

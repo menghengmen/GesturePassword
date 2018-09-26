@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MHGesturePasswordView.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor blackColor];
+    MHGesturePasswordView *view = [[MHGesturePasswordView alloc] initWithFrame:self.view.bounds block:nil];
+   
+    [self.view addSubview:view];
+
 }
 
 
